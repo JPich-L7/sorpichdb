@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+:root{
+    --main-color:#2b4179;
+}
+
+*{
+    font-family: 'Poppins',sans-serif;
+    margin: 0; padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+}
+
+#toggle-sidebar {
+    display: none;
+}
+
+#toggle-sidebar:checked ~ .sidebar h2, 
+#toggle-sidebar:checked ~ .sidebar .sidebar-menu li span {
+    display: none;
+}
+
+#toggle-sidebar:checked ~ .sidebar {
+    width: 60px;
+}
+
+#toggle-sidebar:checked ~ .main {
+    margin-left: 60px;
+}
+
+.sidebar {
+    height: 100%;
+    width: 290px;
+    left: 0;
+    top: 0;
+    position: fixed;
+    background-color: var(--main-color);
+    padding: 1.2rem;
+    transition: width 200ms;
+}
+
+.sidebar-header {
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #111;
+}
+
+.sidebar-header label{
+    margin: 0 !important;
+}
+
+.sidebar-header span {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.sidebar-header i{
+    font-size: 1.7rem;
+    color: whitesmoke;
+}
+
+.sidebar img{
+    width: 40px;
+    height: 40px;
+}
+
+.sidebar-menu {
+    padding-top: 2rem;
+}
+
+.sidebar-menu li{
+    margin-bottom: 1.2rem;
+}
+
+.sidebar-menu li a{
+    color: whitesmoke;
+}
+
+.sidebar-menu li a:hover{
+    text-decoration: none;
+}
+
+.sidebar-menu li a span{
+    margin-left: 0.5rem;
+}
+
+.main {
+    position: relative;
+    margin-left: 290px;
+    background-color: #eee;
+    min-height: 100vh;
+    transition: width 1s;
+}
+
+.searchinput input{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 1rem;
+}
+
+.socail-icons {
+    display: flex;
+    align-items: center;
+}
+
+.socail-icons i{
+    margin-right: 1rem;
+}
+
+.social-icons img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.main-body {
+    margin: 1.5rem;
+}
+
+.main-body h2{
+    font-weight: 600;
+    font-size: 26px;
+    color: var(--main-color);
+}
+
+.card {
+    border: none !important;
+    box-shadow: 2px 4px 7px #888;
+}
+
+.card-body {
+    display: flex;
+    align-items: center;
+}
+
+.card-body i{
+    padding-right: 1.5rem;
+    font-size: 1.5rem;
+    color: var(--main-color);
+}
+
+.card-body h5{
+    font-size: 1rem;
+    color: darkgrey;
+    opacity: .8;
+}
+
+.card-body h4{
+    font-size: 1.3rem;
+    margin-top: .3rem;
+}
+
+.activity table{
+    font-size: 12px
+}
+
+.activity img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%
+}
+
